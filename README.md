@@ -1,6 +1,6 @@
 # dog_shelter
 
-![2021-10-24 (3)](https://user-images.githubusercontent.com/92933233/138602217-ef10c998-f7d2-4a6d-b3fb-2d06a0a6ac5c.png)
+![2021-10-24 (7)](https://user-images.githubusercontent.com/92933233/138602613-d80af4fd-a92d-4230-b529-56aa411cbf9d.png)
 
 
 
