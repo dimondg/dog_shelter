@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="image_lbl">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>здесь будет картинка</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
