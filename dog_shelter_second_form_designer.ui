@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>SecondWindow</class>
+ <widget class="QMainWindow" name="SecondWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>733</width>
-    <height>604</height>
+    <width>729</width>
+    <height>545</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(232, 232, 174)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="image_lbl">
@@ -20,8 +23,11 @@
       <x>50</x>
       <y>20</y>
       <width>631</width>
-      <height>461</height>
+      <height>411</height>
      </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
     </property>
     <property name="text">
      <string/>
@@ -30,26 +36,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>500</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Далее</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
       <x>540</x>
-      <y>500</y>
+      <y>450</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -58,6 +46,30 @@
      <font>
       <pointsize>12</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(214, 214, 160)</string>
+    </property>
+    <property name="text">
+     <string>Далее</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>450</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(214, 214, 160)</string>
     </property>
     <property name="text">
      <string>Выбрать</string>
@@ -69,7 +81,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>733</width>
+     <width>729</width>
      <height>26</height>
     </rect>
    </property>

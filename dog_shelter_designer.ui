@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(232, 232, 174)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -100,7 +103,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_search">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -114,6 +117,9 @@
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(214, 214, 160)</string>
+    </property>
     <property name="text">
      <string>Искать</string>
     </property>
@@ -126,6 +132,14 @@
       <width>121</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(214, 214, 160)</string>
     </property>
     <property name="text">
      <string>Администратор</string>
