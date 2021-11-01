@@ -20,7 +20,7 @@ class Ui_SecondWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.image_lbl = QtWidgets.QLabel(self.centralwidget)
         self.image_lbl.setGeometry(QtCore.QRect(50, 20, 631, 411))
-        self.image_lbl.setFrameShape(QtWidgets.QFrame.WinPanel)
+        self.image_lbl.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.image_lbl.setText("")
         self.image_lbl.setObjectName("image_lbl")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
