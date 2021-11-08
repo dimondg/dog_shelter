@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QMainWindow
-from designers.change_designer import Ui_ChangeWindow
-from add_dog_window import AddDogWidget
-from add_breed_window import AddBreedWidget
+from designers.admin_change_window_designer import Ui_ChangeWindow
+from windows.add_dog_window import AddDogWidget
+from windows.add_breed_window import AddBreedWidget
 
 
 class AdminChangeWidget(QMainWindow, Ui_ChangeWindow):

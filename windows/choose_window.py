@@ -1,7 +1,9 @@
+import sqlite3
+
 from PyQt5.QtWidgets import QMainWindow
 
-from designers.dog_shelter_choose_form_designer import Ui_SecondWindow
-from result_window import ResultWindow
+from designers.choose_window_designer import Ui_SecondWindow
+from windows.result_window import ResultWindow
 from PyQt5.QtGui import QPixmap
 
 
@@ -27,12 +29,23 @@ class SecondWidget(QMainWindow, Ui_SecondWindow):
         # отображение следующей из подходящих собак, если есть всего одна такая собака,
         # то выводится та же картинка
         self.image_lbl.setPixmap(self.pixmap)
+        self.dog_number_now = self.dog_number  # текущий номер собаки
         self.dog_number += 1
 
         if self.dog_number > len(self.selected_dogs_file_names) - 1:  # перезапуск очереди
             self.dog_number = 0  # из подходящих собак
 
     def choose(self):
+        con = sqlite3.connect("dog_shelter_db")
+        cur = con.cursor()
+        cur.execute("""UPDATE dogs
+            SET is_taken = "yes"
+            WHERE dog_image_file_name == :dog_filename
+            """, {'dog_filename': self.selected_dogs_file_names[self.dog_number_now][0]})
+        print(self.selected_dogs_file_names[self.dog_number_now][0])
+        con.commit()
+        con.close()
+
         self.res = ResultWindow()
         self.hide()
         self.res.show()

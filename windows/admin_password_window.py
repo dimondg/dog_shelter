@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QMainWindow
-from designers.dog_shelter_admin_password_form import Ui_AdminWindow
-from admin_change_window import AdminChangeWidget
-from authorization import *
+from designers.admin_password_window_designer import Ui_AdminWindow
+from windows.admin_change_window import AdminChangeWidget
+from functions.authorization import *
 
 
 class AdminPasswordWidget(QMainWindow, Ui_AdminWindow):
