@@ -5,3 +5,7 @@ FormLayout. Кнопки "Администратор" и "Искать" реал
   При нажатии на кнопку "Искать" открывается второе окно в центре экрана.
 На нем большую часть занимает ячейка QLabel в которой отображается картинка выбранной
 собаки. Кнопки "Назад" "Выбрать" и "Далее" реализованы с помощью QPushButton
+![2021-11-05 (5)](https://user-images.githubusercontent.com/92933233/140523545-2f585bca-fa3f-4895-9648-d81ad3a76e94.png)
+![2021-11-05 (7)](https://user-images.githubusercontent.com/92933233/140523587-6fb7c7a4-0b4b-4c6d-b7a6-f63937c6b562.png)
+![2021-11-05 (6)](https://user-images.githubusercontent.com/92933233/140523578-1c955b56-4fc8-4da3-86dc-c3f1f65d9415.png)
+![2021-11-05 (8)](https://user-images.githubusercontent.com/92933233/140523598-5092619e-7542-49a4-abc4-65dffbee14bb.png)
