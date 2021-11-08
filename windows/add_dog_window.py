@@ -5,7 +5,6 @@ from PyQt5.QtWidgets import QMainWindow
 from designers.admin_add_dog_window_designer import Ui_AdminAddDogWindow
 from PyQt5.QtWidgets import QFileDialog
 from functions.convert_to_png import *
-from functions.index import index_now
 
 
 class AddDogWidget(QMainWindow, Ui_AdminAddDogWindow):
@@ -31,7 +30,6 @@ class AddDogWidget(QMainWindow, Ui_AdminAddDogWindow):
                 dogs(dog_image_file_name, breed_id, gender, is_taken)
                 VALUES(:filename, :breed_id, :gender, "no")
                 """, {'filename': filename, 'gender': gender, 'breed_id': breed_id})
-
 
             con.commit()
             con.close()
