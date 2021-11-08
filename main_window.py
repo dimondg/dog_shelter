@@ -1,10 +1,10 @@
 import sqlite3
 
 from PyQt5.QtWidgets import QMainWindow
-from dog_shelter_designer import Ui_MainWindow
 from choose_window import SecondWidget
 from admin_password_window import AdminPasswordWidget
 from PyQt5.QtGui import QPixmap
+from designers.dog_shelter_designer import Ui_MainWindow
 
 
 class MyWidget(QMainWindow, Ui_MainWindow):
