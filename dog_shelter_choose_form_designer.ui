@@ -54,7 +54,7 @@
      <string>Далее</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btn_choose">
     <property name="geometry">
      <rect>
       <x>270</x>

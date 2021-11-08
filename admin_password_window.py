@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow
-from dog_shelter_admin_password_form import Ui_AdminWindow
+from designers.dog_shelter_admin_password_form import Ui_AdminWindow
 from admin_change_window import AdminChangeWidget
 from authorization import *
 
