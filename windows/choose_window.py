@@ -22,7 +22,6 @@ class SecondWidget(QMainWindow, Ui_SecondWindow):
         self.hide()
 
     def next(self):
-        print(self.selected_dogs_file_names)
         if len(self.selected_dogs_file_names) == 1:  # Изменение значения номера собаки на 0
             self.dog_number = 0  # если есть всего одна подходящая собака
         self.pixmap = QPixmap(f"images\{self.selected_dogs_file_names[self.dog_number][0]}.png")
@@ -42,7 +41,6 @@ class SecondWidget(QMainWindow, Ui_SecondWindow):
             SET is_taken = "yes"
             WHERE dog_image_file_name == :dog_filename
             """, {'dog_filename': self.selected_dogs_file_names[self.dog_number_now][0]})
-        print(self.selected_dogs_file_names[self.dog_number_now][0])
         con.commit()
         con.close()
 
